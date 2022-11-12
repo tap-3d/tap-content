@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	
+    <title>Training All People</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/frame.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=DM Sans:wght@0,700;1;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Inter:wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  </head>
+  <body class="dark">
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas"></canvas>
+    </div>
+
+    <div id="loading-cover">
+	  <div id="unity-logo"><img src="TemplateData/logo.png"></div>
+	  <div id="hint-container">
+	     <div id="hint-title">Moving around the room</div>
+		 <div id="hint-text">Use W,A,S,D on your keyboard to walk around the room. You can use the mouse or the arrow keys to look around. If you ever want to center your screen, press the space bar.</div>
+      </div>
+      <div id="unity-loading-bar" style="display: none;">
+		<div id="unity-loading-bar-title">L O A D I N G . . .</div>
+        <div id="unity-progress-bar">
+		  <div id="unity-progress-bar-empty">
+	        <div id="unity-progress-bar-full"></div>
+		  </div>
+		</div>
+      </div>
+    </div>
+    <div id="unity-fullscreen-button" style="display: none;"></div>
+		
+<script>
+	function init() {
+		const progressBarEmpty = document.querySelector("#unity-loading-bar");
+		const progressBarFull = document.querySelector("#unity-progress-bar-full");
+		progressBarEmpty.style.display = "";
+		progressBarFull.style.width = 0;
+	
+    const unityElement = document.getElementById("unity-container")
+    unityElement.style.display = 'block';
+    loadUnity();
+	}	
+
+	init();
+	
+	function loadUnity() {
+      const hideFullScreenButton = "";
+      const buildUrl = "Build";
+      const loaderUrl = buildUrl + "/WebGL.loader.js";
+      const config = {
+        dataUrl: buildUrl + "/WebGL.data.unityweb",
+        frameworkUrl: buildUrl + "/WebGL.framework.js.unityweb",
+        codeUrl: buildUrl + "/WebGL.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "TAP",
+        productName: "TAP-Sim",
+        productVersion: "0.0.1",
+      };
+
+      const container = document.querySelector("#unity-container");
+      const canvas = document.querySelector("#unity-canvas");
+      const loadingCover = document.querySelector("#loading-cover");
+      const progressBarEmpty = document.querySelector("#unity-loading-bar");
+      const progressBarFull = document.querySelector("#unity-progress-bar-full");
+      const fullscreenButton = document.querySelector("#unity-fullscreen-button");
+
+      const canFullscreen = (function() {
+        for (const key of [
+            'exitFullscreen',
+            'webkitExitFullscreen',
+            'webkitCancelFullScreen',
+            'mozCancelFullScreen',
+            'msExitFullscreen',
+          ]) {
+          if (key in document) {
+            return true;
+          }
+        }
+        return false;
+      }());
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        //container.className = "unity-mobile";
+        //config.devicePixelRatio = 1;
+      }
+      loadingCover.style.display = "";
+
+      const script = document.createElement("script");
+      script.src = loaderUrl;
+	  script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          progressBarEmpty.style.display = "";
+          progressBarFull.style.width = `${100 * progress / 2}%`; // we will assume loading the unity web asm in 50% and unity bundles are the other
+        }).then((unityInstance) => {
+          if (canFullscreen) {
+            if (!hideFullScreenButton) {
+              fullscreenButton.style.display = "";
+            }
+            fullscreenButton.onclick = () => {
+              unityInstance.SetFullscreen(1);
+            };
+          }
+			
+		  // hooks
+		  const data = {Session: "SESSION-KEY-TODO", Simulation: "Sim_Training_Leak-Checking"};
+		  unityInstance.SendMessage('Managers', 'UnityStart', JSON.stringify(data));
+		  
+		  // We will let the Unity app hide the loading cover screen so we don't see black for a few frames waiting for its loading screen to show
+		  //loadingCover.style.display = "none";
+        }).catch((message) => {
+          alert(message);
+        });
+      };
+      document.body.appendChild(script);
+	}
+    </script>
+  </body>
+</html>
