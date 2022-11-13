@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	
     <title>Training All People</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/frame.css">
+    <link rel="shortcut icon" href="./TemplateData/favicon.ico">
+    <link rel="stylesheet" href="./TemplateData/frame.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=DM Sans:wght@0,700;1;1,700&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
     </div>
 
     <div id="loading-cover">
-	  <div id="unity-logo"><img src="TemplateData/logo.png"></div>
+	  <div id="unity-logo"><img src="./TemplateData/logo.png"></div>
 	  <div id="hint-container">
 	     <div id="hint-title">Moving around the room</div>
 		 <div id="hint-text">Use W,A,S,D on your keyboard to walk around the room. You can use the mouse or the arrow keys to look around. If you ever want to center your screen, press the space bar.</div>
@@ -51,13 +51,13 @@
 	
 	function loadUnity() {
       const hideFullScreenButton = "";
-      const buildUrl = "Build";
+      const buildUrl = "./Build";
       const loaderUrl = buildUrl + "/WebGL.loader.js";
       const config = {
         dataUrl: buildUrl + "/WebGL.data.unityweb",
         frameworkUrl: buildUrl + "/WebGL.framework.js.unityweb",
         codeUrl: buildUrl + "/WebGL.wasm.unityweb",
-        streamingAssetsUrl: "StreamingAssets",
+        streamingAssetsUrl: "./StreamingAssets",
         companyName: "TAP",
         productName: "TAP-Sim",
         productVersion: "0.0.1",
