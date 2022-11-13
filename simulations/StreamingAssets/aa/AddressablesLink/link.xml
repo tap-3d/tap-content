@@ -10,7 +10,6 @@
     <type fullname="ConnectIcon" preserve="all" />
     <type fullname="ControlBarButtonViewController" preserve="all" />
     <type fullname="CursorController" preserve="all" />
-    <type fullname="DraggableUiItem" preserve="all" />
     <type fullname="FaderViewController" preserve="all" />
     <type fullname="FittingItem" preserve="all" />
     <type fullname="HighlightableItem" preserve="all" />
@@ -23,6 +22,7 @@
     <type fullname="InfoPaneViewController" preserve="all" />
     <type fullname="InspectIcon" preserve="all" />
     <type fullname="InstrumentsPaneViewController" preserve="all" />
+    <type fullname="InventoryItemButtonViewController" preserve="all" />
     <type fullname="InventoryItemData" preserve="all" />
     <type fullname="InventoryItemsPanelViewController" preserve="all" />
     <type fullname="InventoryPaneViewController" preserve="all" />
