@@ -10,6 +10,7 @@
     <type fullname="ConnectIcon" preserve="all" />
     <type fullname="ControlBarButtonViewController" preserve="all" />
     <type fullname="CursorController" preserve="all" />
+    <type fullname="DottedLineDrawer" preserve="all" />
     <type fullname="FaderViewController" preserve="all" />
     <type fullname="FittingItem" preserve="all" />
     <type fullname="HighlightableItem" preserve="all" />
@@ -54,6 +55,7 @@
     <type fullname="TimedPopupViewController" preserve="all" />
     <type fullname="TurnIcon" preserve="all" />
     <type fullname="TwoStatesInteractableItem" preserve="all" />
+    <type fullname="TwoStepConnectableItem" preserve="all" />
     <type fullname="UIBlockingScrimViewController" preserve="all" />
     <type fullname="ValveCap" preserve="all" />
     <type fullname="VirtualMouseInput" preserve="all" />
@@ -61,7 +63,6 @@
     <type fullname="WorldSpaceCanvasViewController" preserve="all" />
     <type fullname="WorldSpaceTooltip" preserve="all" />
     <type fullname="WorldSpaceTooltipsSpawner" preserve="all" />
-    <type fullname="Outline/ListVector3" preserve="nothing" serialized="true" />
     <type fullname="SimulationData/Interaction" preserve="nothing" serialized="true" />
     <type fullname="SimulationData/Interaction/InteractionType" preserve="nothing" serialized="true" />
     <type fullname="SimulationData/ObjectStateTuple" preserve="nothing" serialized="true" />
@@ -70,6 +71,7 @@
     <type fullname="SimulationData/Task" preserve="nothing" serialized="true" />
     <type fullname="SimulationData/Alert" preserve="nothing" serialized="true" />
     <type fullname="SimulationData/Alert/AlertType" preserve="nothing" serialized="true" />
+    <type fullname="Outline/ListVector3" preserve="nothing" serialized="true" />
     <type fullname="SpawnableArea/Placement" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Cinemachine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
@@ -154,6 +156,7 @@
     <type fullname="UnityEngine.LightingSettings" preserve="all" />
     <type fullname="UnityEngine.LightmapSettings" preserve="all" />
     <type fullname="UnityEngine.LightProbes" preserve="all" />
+    <type fullname="UnityEngine.LineRenderer" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
     <type fullname="UnityEngine.Mesh" preserve="all" />
     <type fullname="UnityEngine.MeshFilter" preserve="all" />
