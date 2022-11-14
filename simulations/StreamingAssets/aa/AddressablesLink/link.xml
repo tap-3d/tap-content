@@ -10,7 +10,6 @@
     <type fullname="ConnectIcon" preserve="all" />
     <type fullname="ControlBarButtonViewController" preserve="all" />
     <type fullname="CursorController" preserve="all" />
-    <type fullname="DottedLineDrawer" preserve="all" />
     <type fullname="FaderViewController" preserve="all" />
     <type fullname="FittingItem" preserve="all" />
     <type fullname="HighlightableItem" preserve="all" />
@@ -156,7 +155,6 @@
     <type fullname="UnityEngine.LightingSettings" preserve="all" />
     <type fullname="UnityEngine.LightmapSettings" preserve="all" />
     <type fullname="UnityEngine.LightProbes" preserve="all" />
-    <type fullname="UnityEngine.LineRenderer" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
     <type fullname="UnityEngine.Mesh" preserve="all" />
     <type fullname="UnityEngine.MeshFilter" preserve="all" />
