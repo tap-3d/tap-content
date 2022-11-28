@@ -126,6 +126,7 @@
     <type fullname="Outline/ListVector3" preserve="nothing" serialized="true" />
     <type fullname="SpawnableArea/Placement" preserve="nothing" serialized="true" />
     <type fullname="BNG.GrabbableEvent" preserve="nothing" serialized="true" />
+    <type fullname="VRUIPlacementController/UIView" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Cinemachine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="Cinemachine.Cinemachine3rdPersonFollow" preserve="all" />
