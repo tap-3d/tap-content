@@ -10,7 +10,6 @@
     <type fullname="BNG.ControllerOffsetHelper" preserve="all" />
     <type fullname="BNG.GrabAction" preserve="all" />
     <type fullname="BNG.Grabbable" preserve="all" />
-    <type fullname="BNG.GrabbableHaptics" preserve="all" />
     <type fullname="BNG.GrabbablesInTrigger" preserve="all" />
     <type fullname="BNG.GrabbableUnityEvents" preserve="all" />
     <type fullname="BNG.Grabber" preserve="all" />
@@ -92,17 +91,20 @@
     <type fullname="UIBlockingScrimViewController" preserve="all" />
     <type fullname="ValveCap" preserve="all" />
     <type fullname="VirtualMouseInput" preserve="all" />
+    <type fullname="VRConnectIcon" preserve="all" />
     <type fullname="VRGrabbableChamberLid" preserve="all" />
     <type fullname="VRGrabbableValve" preserve="all" />
     <type fullname="VRHandParent" preserve="all" />
+    <type fullname="VRHoldIcon" preserve="all" />
+    <type fullname="VRInteractableWithTool" preserve="all" />
     <type fullname="VRInventoryDropController" preserve="all" />
     <type fullname="VRInventoryIconInput" preserve="all" />
     <type fullname="VRInventoryTool" preserve="all" />
+    <type fullname="VRItemPartsVisibilityController" preserve="all" />
     <type fullname="VRReticle" preserve="all" />
     <type fullname="VRUIHoveringDetection" preserve="all" />
     <type fullname="VRUIPlacementController" preserve="all" />
     <type fullname="VRUserInputController" preserve="all" />
-    <type fullname="VRWaterBottle" preserve="all" />
     <type fullname="WaitIcon" preserve="all" />
     <type fullname="WobbleVFX" preserve="all" />
     <type fullname="WorldSpaceCanvasViewController" preserve="all" />
@@ -110,6 +112,8 @@
     <type fullname="WorldSpaceTooltipsSpawner" preserve="all" />
     <type fullname="WorldStateCheckHandler" preserve="all" />
     <type fullname="BNG.FingerJoint" preserve="nothing" serialized="true" />
+    <type fullname="BNG.FloatEvent" preserve="nothing" serialized="true" />
+    <type fullname="BNG.GrabberEvent" preserve="nothing" serialized="true" />
     <type fullname="BNG.HandPoseDefinition" preserve="nothing" serialized="true" />
     <type fullname="SimulationData/ConditionalObjectStateCheck" preserve="nothing" serialized="true" />
     <type fullname="SimulationData/ConditionalOperator" preserve="nothing" serialized="true" />
@@ -121,8 +125,6 @@
     <type fullname="SimulationData/Task" preserve="nothing" serialized="true" />
     <type fullname="SimulationData/Alert" preserve="nothing" serialized="true" />
     <type fullname="SimulationData/Alert/AlertType" preserve="nothing" serialized="true" />
-    <type fullname="BNG.FloatEvent" preserve="nothing" serialized="true" />
-    <type fullname="BNG.GrabberEvent" preserve="nothing" serialized="true" />
     <type fullname="Outline/ListVector3" preserve="nothing" serialized="true" />
     <type fullname="SpawnableArea/Placement" preserve="nothing" serialized="true" />
     <type fullname="BNG.GrabbableEvent" preserve="nothing" serialized="true" />
