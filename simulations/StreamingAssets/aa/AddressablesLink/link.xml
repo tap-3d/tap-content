@@ -102,7 +102,9 @@
     <type fullname="VRInventoryTool" preserve="all" />
     <type fullname="VRItemPartsVisibilityController" preserve="all" />
     <type fullname="VRReticle" preserve="all" />
+    <type fullname="VRUICustomInputMarker" preserve="all" />
     <type fullname="VRUIHoveringDetection" preserve="all" />
+    <type fullname="VRUIInputSources" preserve="all" />
     <type fullname="VRUIPlacementController" preserve="all" />
     <type fullname="VRUserInputController" preserve="all" />
     <type fullname="WaitIcon" preserve="all" />
@@ -128,6 +130,8 @@
     <type fullname="Outline/ListVector3" preserve="nothing" serialized="true" />
     <type fullname="SpawnableArea/Placement" preserve="nothing" serialized="true" />
     <type fullname="BNG.GrabbableEvent" preserve="nothing" serialized="true" />
+    <type fullname="VRUIInputSources/InputSourceData" preserve="nothing" serialized="true" />
+    <type fullname="VRUIInputSources/InputSourceData/InputReferenceByHandSide" preserve="nothing" serialized="true" />
     <type fullname="VRUIPlacementController/UIView" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Cinemachine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
@@ -206,6 +210,7 @@
     <type fullname="UnityEngine.XR.Interaction.Toolkit.XRInteractionManager" preserve="all" />
     <type fullname="UnityEngine.XR.Interaction.Toolkit.XRInteractorLineVisual" preserve="all" />
     <type fullname="UnityEngine.XR.Interaction.Toolkit.XRRayInteractor" preserve="all" />
+    <type fullname="UnityEngine.XR.Interaction.Toolkit.XRSimpleInteractable" preserve="all" />
     <type fullname="UnityEngine.XR.Interaction.Toolkit.ActivateEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.XR.Interaction.Toolkit.DeactivateEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.XR.Interaction.Toolkit.HoverEnterEvent" preserve="nothing" serialized="true" />
