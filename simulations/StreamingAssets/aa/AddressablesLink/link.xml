@@ -107,6 +107,7 @@
     <type fullname="VRUIInputSources" preserve="all" />
     <type fullname="VRUIPlacementController" preserve="all" />
     <type fullname="VRUserInputController" preserve="all" />
+    <type fullname="VRUserPlacementController" preserve="all" />
     <type fullname="WaitIcon" preserve="all" />
     <type fullname="WobbleVFX" preserve="all" />
     <type fullname="WorldSpaceCanvasViewController" preserve="all" />
