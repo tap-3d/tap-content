@@ -5,6 +5,38 @@
     <type fullname="AlertViewController" preserve="all" />
     <type fullname="BackgroundUICanvasViewController" preserve="all" />
     <type fullname="BillboardUI" preserve="all" />
+    <type fullname="BNG.AutoPoser" preserve="all" />
+    <type fullname="BNG.BNGPlayerController" preserve="all" />
+    <type fullname="BNG.ControllerOffsetHelper" preserve="all" />
+    <type fullname="BNG.GrabAction" preserve="all" />
+    <type fullname="BNG.Grabbable" preserve="all" />
+    <type fullname="BNG.GrabbablesInTrigger" preserve="all" />
+    <type fullname="BNG.GrabbableUnityEvents" preserve="all" />
+    <type fullname="BNG.Grabber" preserve="all" />
+    <type fullname="BNG.GrabPoint" preserve="all" />
+    <type fullname="BNG.HandCollision" preserve="all" />
+    <type fullname="BNG.HandController" preserve="all" />
+    <type fullname="BNG.HandPose" preserve="all" />
+    <type fullname="BNG.HandPoser" preserve="all" />
+    <type fullname="BNG.HeadCollisionFade" preserve="all" />
+    <type fullname="BNG.HeadCollisionMove" preserve="all" />
+    <type fullname="BNG.IgnoreColliders" preserve="all" />
+    <type fullname="BNG.InputBridge" preserve="all" />
+    <type fullname="BNG.JointHelper" preserve="all" />
+    <type fullname="BNG.Lever" preserve="all" />
+    <type fullname="BNG.LocomotionManager" preserve="all" />
+    <type fullname="BNG.PlayerGravity" preserve="all" />
+    <type fullname="BNG.PlayerRotation" preserve="all" />
+    <type fullname="BNG.PlayerTeleport" preserve="all" />
+    <type fullname="BNG.RotateWithHMD" preserve="all" />
+    <type fullname="BNG.ScreenFader" preserve="all" />
+    <type fullname="BNG.SmoothLocomotion" preserve="all" />
+    <type fullname="BNG.SnapZone" preserve="all" />
+    <type fullname="BNG.SnapZoneRingHelper" preserve="all" />
+    <type fullname="BNG.TrackedDevice" preserve="all" />
+    <type fullname="BNG.UITrigger" preserve="all" />
+    <type fullname="BNG.VREmulator" preserve="all" />
+    <type fullname="BNG.VRUtils" preserve="all" />
     <type fullname="ButtonChildrenViewController" preserve="all" />
     <type fullname="ButtonHintViewController" preserve="all" />
     <type fullname="ConnectIcon" preserve="all" />
@@ -40,6 +72,7 @@
     <type fullname="ProgressBarViewController" preserve="all" />
     <type fullname="ReferenceIcon" preserve="all" />
     <type fullname="ResizablePanel" preserve="all" />
+    <type fullname="ResultsPaneViewController" preserve="all" />
     <type fullname="SimulationData" preserve="all" />
     <type fullname="SpawnableArea" preserve="all" />
     <type fullname="StarterAssets.FirstPersonController" preserve="all" />
@@ -54,14 +87,39 @@
     <type fullname="TimedPopupViewController" preserve="all" />
     <type fullname="TurnIcon" preserve="all" />
     <type fullname="TwoStatesInteractableItem" preserve="all" />
+    <type fullname="TwoStepConnectableItem" preserve="all" />
     <type fullname="UIBlockingScrimViewController" preserve="all" />
     <type fullname="ValveCap" preserve="all" />
     <type fullname="VirtualMouseInput" preserve="all" />
+    <type fullname="VRConnectIcon" preserve="all" />
+    <type fullname="VRGrabbableChamberLid" preserve="all" />
+    <type fullname="VRGrabbableValve" preserve="all" />
+    <type fullname="VRHandParent" preserve="all" />
+    <type fullname="VRHoldIcon" preserve="all" />
+    <type fullname="VRInteractableWithTool" preserve="all" />
+    <type fullname="VRInventoryDropController" preserve="all" />
+    <type fullname="VRInventoryIconInput" preserve="all" />
+    <type fullname="VRInventoryTool" preserve="all" />
+    <type fullname="VRItemPartsVisibilityController" preserve="all" />
+    <type fullname="VRReticle" preserve="all" />
+    <type fullname="VRUICustomInputMarker" preserve="all" />
+    <type fullname="VRUIHoveringDetection" preserve="all" />
+    <type fullname="VRUIInputSources" preserve="all" />
+    <type fullname="VRUIPlacementController" preserve="all" />
+    <type fullname="VRUserInputController" preserve="all" />
+    <type fullname="VRUserPlacementController" preserve="all" />
     <type fullname="WaitIcon" preserve="all" />
+    <type fullname="WobbleVFX" preserve="all" />
     <type fullname="WorldSpaceCanvasViewController" preserve="all" />
     <type fullname="WorldSpaceTooltip" preserve="all" />
     <type fullname="WorldSpaceTooltipsSpawner" preserve="all" />
-    <type fullname="Outline/ListVector3" preserve="nothing" serialized="true" />
+    <type fullname="WorldStateCheckHandler" preserve="all" />
+    <type fullname="BNG.FingerJoint" preserve="nothing" serialized="true" />
+    <type fullname="BNG.FloatEvent" preserve="nothing" serialized="true" />
+    <type fullname="BNG.GrabberEvent" preserve="nothing" serialized="true" />
+    <type fullname="BNG.HandPoseDefinition" preserve="nothing" serialized="true" />
+    <type fullname="SimulationData/ConditionalObjectStateCheck" preserve="nothing" serialized="true" />
+    <type fullname="SimulationData/ConditionalOperator" preserve="nothing" serialized="true" />
     <type fullname="SimulationData/Interaction" preserve="nothing" serialized="true" />
     <type fullname="SimulationData/Interaction/InteractionType" preserve="nothing" serialized="true" />
     <type fullname="SimulationData/ObjectStateTuple" preserve="nothing" serialized="true" />
@@ -70,7 +128,12 @@
     <type fullname="SimulationData/Task" preserve="nothing" serialized="true" />
     <type fullname="SimulationData/Alert" preserve="nothing" serialized="true" />
     <type fullname="SimulationData/Alert/AlertType" preserve="nothing" serialized="true" />
+    <type fullname="Outline/ListVector3" preserve="nothing" serialized="true" />
     <type fullname="SpawnableArea/Placement" preserve="nothing" serialized="true" />
+    <type fullname="BNG.GrabbableEvent" preserve="nothing" serialized="true" />
+    <type fullname="VRUIInputSources/InputSourceData" preserve="nothing" serialized="true" />
+    <type fullname="VRUIInputSources/InputSourceData/InputReferenceByHandSide" preserve="nothing" serialized="true" />
+    <type fullname="VRUIPlacementController/UIView" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Cinemachine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="Cinemachine.Cinemachine3rdPersonFollow" preserve="all" />
@@ -97,11 +160,12 @@
     <type fullname="UnityEngine.Animations.Rigging.WeightedTransform" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Animations.Rigging.WeightedTransformArray" preserve="nothing" serialized="true" />
   </assembly>
-  <assembly fullname="Unity.InputSystem, Version=1.4.3.0, Culture=neutral, PublicKeyToken=null">
+  <assembly fullname="Unity.InputSystem, Version=1.4.4.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.InputSystem.InputActionAsset" preserve="all" />
     <type fullname="UnityEngine.InputSystem.InputActionReference" preserve="all" />
     <type fullname="UnityEngine.InputSystem.PlayerInput" preserve="all" />
     <type fullname="UnityEngine.InputSystem.UI.InputSystemUIInputModule" preserve="all" />
+    <type fullname="UnityEngine.InputSystem.XR.TrackedPoseDriver" preserve="all" />
     <type fullname="UnityEngine.InputSystem.InputAction" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.InputSystem.InputActionMap" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.InputSystem.InputBinding" preserve="nothing" serialized="true" />
@@ -111,6 +175,7 @@
     <type fullname="UnityEngine.InputSystem.PlayerInput/ControlsChangedEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.InputSystem.PlayerInput/DeviceLostEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.InputSystem.PlayerInput/DeviceRegainedEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.InputSystem.InputActionProperty" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Rendering.Universal.UniversalAdditionalCameraData" preserve="all" />
@@ -137,14 +202,36 @@
     <type fullname="TMPro.TMP_GlyphValueRecord" preserve="nothing" serialized="true" />
     <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
   </assembly>
+  <assembly fullname="Unity.XR.Interaction.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.XR.Interaction.Toolkit.ActionBasedController" preserve="all" />
+    <type fullname="UnityEngine.XR.Interaction.Toolkit.Inputs.InputActionManager" preserve="all" />
+    <type fullname="UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceGraphicRaycaster" preserve="all" />
+    <type fullname="UnityEngine.XR.Interaction.Toolkit.UI.XRUIInputModule" preserve="all" />
+    <type fullname="UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable" preserve="all" />
+    <type fullname="UnityEngine.XR.Interaction.Toolkit.XRInteractionManager" preserve="all" />
+    <type fullname="UnityEngine.XR.Interaction.Toolkit.XRInteractorLineVisual" preserve="all" />
+    <type fullname="UnityEngine.XR.Interaction.Toolkit.XRRayInteractor" preserve="all" />
+    <type fullname="UnityEngine.XR.Interaction.Toolkit.XRSimpleInteractable" preserve="all" />
+    <type fullname="UnityEngine.XR.Interaction.Toolkit.ActivateEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.XR.Interaction.Toolkit.DeactivateEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.XR.Interaction.Toolkit.HoverEnterEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.XR.Interaction.Toolkit.HoverExitEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.XR.Interaction.Toolkit.InteractionLayerMask" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.XR.Interaction.Toolkit.SelectEnterEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.XR.Interaction.Toolkit.SelectExitEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.XR.Interaction.Toolkit.XRInteractableEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.XR.Interaction.Toolkit.XRInteractorEvent" preserve="nothing" serialized="true" />
+  </assembly>
   <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.AnimationClip" preserve="all" />
     <type fullname="UnityEngine.Animator" preserve="all" />
+    <type fullname="UnityEngine.Avatar" preserve="all" />
     <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.AudioClip" preserve="all" />
     <type fullname="UnityEngine.AudioListener" preserve="all" />
+    <type fullname="UnityEngine.AudioSource" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Camera" preserve="all" />
@@ -154,6 +241,7 @@
     <type fullname="UnityEngine.LightingSettings" preserve="all" />
     <type fullname="UnityEngine.LightmapSettings" preserve="all" />
     <type fullname="UnityEngine.LightProbes" preserve="all" />
+    <type fullname="UnityEngine.LineRenderer" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
     <type fullname="UnityEngine.Mesh" preserve="all" />
     <type fullname="UnityEngine.MeshFilter" preserve="all" />
@@ -163,6 +251,7 @@
     <type fullname="UnityEngine.ReflectionProbe" preserve="all" />
     <type fullname="UnityEngine.RenderSettings" preserve="all" />
     <type fullname="UnityEngine.Shader" preserve="all" />
+    <type fullname="UnityEngine.SkinnedMeshRenderer" preserve="all" />
     <type fullname="UnityEngine.Sprite" preserve="all" />
     <type fullname="UnityEngine.Texture2D" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
@@ -180,11 +269,12 @@
     <type fullname="UnityEngine.BoxCollider" preserve="all" />
     <type fullname="UnityEngine.CapsuleCollider" preserve="all" />
     <type fullname="UnityEngine.CharacterController" preserve="all" />
+    <type fullname="UnityEngine.ConfigurableJoint" preserve="all" />
+    <type fullname="UnityEngine.FixedJoint" preserve="all" />
+    <type fullname="UnityEngine.HingeJoint" preserve="all" />
     <type fullname="UnityEngine.MeshCollider" preserve="all" />
+    <type fullname="UnityEngine.Rigidbody" preserve="all" />
     <type fullname="UnityEngine.SphereCollider" preserve="all" />
-  </assembly>
-  <assembly fullname="UnityEngine.SpatialTracking, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="UnityEngine.SpatialTracking.TrackedPoseDriver" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Font" preserve="all" />
@@ -192,6 +282,7 @@
   <assembly fullname="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.EventSystems.EventSystem" preserve="all" />
     <type fullname="UnityEngine.EventSystems.EventTrigger" preserve="all" />
+    <type fullname="UnityEngine.UI.AspectRatioFitter" preserve="all" />
     <type fullname="UnityEngine.UI.Button" preserve="all" />
     <type fullname="UnityEngine.UI.CanvasScaler" preserve="all" />
     <type fullname="UnityEngine.UI.ContentSizeFitter" preserve="all" />
@@ -204,6 +295,7 @@
     <type fullname="UnityEngine.UI.RawImage" preserve="all" />
     <type fullname="UnityEngine.UI.Scrollbar" preserve="all" />
     <type fullname="UnityEngine.UI.ScrollRect" preserve="all" />
+    <type fullname="UnityEngine.UI.Text" preserve="all" />
     <type fullname="UnityEngine.UI.Toggle" preserve="all" />
     <type fullname="UnityEngine.UI.ToggleGroup" preserve="all" />
     <type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="all" />
@@ -218,14 +310,12 @@
     <type fullname="UnityEngine.UI.ScrollRect/ScrollRectEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Scrollbar/ScrollEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Toggle/ToggleEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.FontData" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Canvas" preserve="all" />
     <type fullname="UnityEngine.CanvasGroup" preserve="all" />
     <type fullname="UnityEngine.CanvasRenderer" preserve="all" />
-  </assembly>
-  <assembly fullname="UnityEngine.XR.LegacyInputHelpers, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="UnityEditor.XR.LegacyInputHelpers.CameraOffset" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.TextCoreFontEngineModule">
     <type fullname="UnityEngine.TextCore.FaceInfo" preserve="nothing" serialized="true" />
