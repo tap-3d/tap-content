@@ -33,92 +33,126 @@
 		</div>
       </div>
     </div>
-    <div id="unity-fullscreen-button" style="display: none;"></div>
-		
-<script>
-	function init() {
-		const progressBarEmpty = document.querySelector("#unity-loading-bar");
-		const progressBarFull = document.querySelector("#unity-progress-bar-full");
-		progressBarEmpty.style.display = "";
-		progressBarFull.style.width = 0;
-	
-    const unityElement = document.getElementById("unity-container")
-    unityElement.style.display = 'block';
-    loadUnity();
-	}	
+    <div id="unity-fullscreen-button" style="display: none;"></div>		
+    <script>
+      function init() {
+        const progressBarEmpty = document.querySelector("#unity-loading-bar");
+        const progressBarFull = document.querySelector("#unity-progress-bar-full");
+        progressBarEmpty.style.display = "";
+        progressBarFull.style.width = 0;
+      
+        const unityElement = document.getElementById("unity-container")
+        unityElement.style.display = 'block';
+        loadUnity();
+      }	
 
-	init();
-	
-	function loadUnity() {
-      const hideFullScreenButton = "";
-      const buildUrl = "./Build";
-      const loaderUrl = buildUrl + "/WebGL.loader.js";
-      const config = {
-        dataUrl: buildUrl + "/WebGL.data.unityweb",
-        frameworkUrl: buildUrl + "/WebGL.framework.js.unityweb",
-        codeUrl: buildUrl + "/WebGL.wasm.unityweb",
-        streamingAssetsUrl: "./StreamingAssets",
-        companyName: "TAP",
-        productName: "TAP-Sim",
-        productVersion: "0.0.1",
-      };
+      init();
+      
+      function loadUnity() {
+          const hideFullScreenButton = "";
+          const buildUrl = "./Build";
+          const loaderUrl = buildUrl + "/WebGL.loader.js";
+          const config = {
+            dataUrl: buildUrl + "/WebGL.data.unityweb",
+            frameworkUrl: buildUrl + "/WebGL.framework.js.unityweb",
+            codeUrl: buildUrl + "/WebGL.wasm.unityweb",
+            streamingAssetsUrl: "./StreamingAssets",
+            companyName: "TAP",
+            productName: "TAP-Sim",
+            productVersion: "0.0.1",
+          };
 
-      const container = document.querySelector("#unity-container");
-      const canvas = document.querySelector("#unity-canvas");
-      const loadingCover = document.querySelector("#loading-cover");
-      const progressBarEmpty = document.querySelector("#unity-loading-bar");
-      const progressBarFull = document.querySelector("#unity-progress-bar-full");
-      const fullscreenButton = document.querySelector("#unity-fullscreen-button");
+          const container = document.querySelector("#unity-container");
+          const canvas = document.querySelector("#unity-canvas");
+          const loadingCover = document.querySelector("#loading-cover");
+          const progressBarEmpty = document.querySelector("#unity-loading-bar");
+          const progressBarFull = document.querySelector("#unity-progress-bar-full");
+          const fullscreenButton = document.querySelector("#unity-fullscreen-button");
 
-      const canFullscreen = (function() {
-        for (const key of [
-            'exitFullscreen',
-            'webkitExitFullscreen',
-            'webkitCancelFullScreen',
-            'mozCancelFullScreen',
-            'msExitFullscreen',
-          ]) {
-          if (key in document) {
-            return true;
-          }
-        }
-        return false;
-      }());
-
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        //container.className = "unity-mobile";
-        //config.devicePixelRatio = 1;
-      }
-      loadingCover.style.display = "";
-
-      const script = document.createElement("script");
-      script.src = loaderUrl;
-	  script.onload = () => {
-        createUnityInstance(canvas, config, (progress) => {
-          progressBarEmpty.style.display = "";
-          progressBarFull.style.width = `${100 * progress / 2}%`; // we will assume loading the unity web asm in 50% and unity bundles are the other
-        }).then((unityInstance) => {
-          if (canFullscreen) {
-            if (!hideFullScreenButton) {
-              fullscreenButton.style.display = "";
+          const canFullscreen = (function() {
+            for (const key of [
+                'exitFullscreen',
+                'webkitExitFullscreen',
+                'webkitCancelFullScreen',
+                'mozCancelFullScreen',
+                'msExitFullscreen',
+              ]) {
+              if (key in document) {
+                return true;
+              }
             }
-            fullscreenButton.onclick = () => {
-              unityInstance.SetFullscreen(1);
-            };
+            return false;
+          }());
+
+          if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+            //container.className = "unity-mobile";
+            //config.devicePixelRatio = 1;
           }
-			
-		  // hooks
-		  const data = {Session: "SESSION-KEY-TODO", Simulation: "Sim_Training_Leak-Checking"};
-		  unityInstance.SendMessage('Managers', 'UnityStart', JSON.stringify(data));
-		  
-		  // We will let the Unity app hide the loading cover screen so we don't see black for a few frames waiting for its loading screen to show
-		  //loadingCover.style.display = "none";
-        }).catch((message) => {
-          alert(message);
-        });
-      };
-      document.body.appendChild(script);
-	}
+          loadingCover.style.display = "";
+
+          const script = document.createElement("script");
+          script.src = loaderUrl;
+        script.onload = () => {
+            createUnityInstance(canvas, config, (progress) => {
+              progressBarEmpty.style.display = "";
+              progressBarFull.style.width = `${100 * progress / 2}%`; // we will assume loading the unity web asm in 50% and unity bundles are the other
+            }).then((unityInstance) => {
+              if (canFullscreen) {
+                if (!hideFullScreenButton) {
+                  fullscreenButton.style.display = "";
+                }
+                fullscreenButton.onclick = () => {
+                  unityInstance.SetFullscreen(1);
+                };
+              }
+          
+          // hooks
+          //?env=<dev or staging or prod>
+          //&simulationId=<Simulation ID>
+          //?endpoint=<URL to xAPI calls>
+          //&fetch=<Fetch URL for the Authorization Token>
+          //&actor=<Actor json data>
+          //&registration=<Registration ID>
+          //&activityId=<AU activity ID>
+          var env = getQueryVariable("env") ?? "dev";
+          var endpoint = getQueryVariable("endpoint") ?? "";
+          var fetch = getQueryVariable("fetch") ?? "";
+          var actor = getQueryVariable("actor") ?? "";
+          var registration = getQueryVariable("registration") ?? "";
+          var activitityId = getQueryVariable("activityId") ?? "";
+
+          var simulationId = getQueryVariable("simulationId") ?? "Sim_Training_Leak-Checking";
+          
+          const data = {
+              environment: env,
+              actor: actor,
+              registration: registration,
+              activitityId: activitityId,
+              simulationId: simulationId,
+              xApiUrl: endpoint,
+              fetchUrl: fetch
+          };
+          unityInstance.SendMessage('Managers', 'UnityStart', JSON.stringify(data));
+          
+          // We will let the Unity app hide the loading cover screen so we don't see black for a few frames waiting for its loading screen to show
+          //loadingCover.style.display = "none";
+            }).catch((message) => {
+              alert(message);
+            });
+          };
+          document.body.appendChild(script);
+      }
+      function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split('&');
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split('=');
+            if (decodeURIComponent(pair[0]) == variable) {
+                return decodeURIComponent(pair[1]);
+            }
+        }
+        console.log('Query variable %s not found', variable);
+      }
     </script>
   </body>
 </html>
