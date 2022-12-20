@@ -44,6 +44,7 @@
     <type fullname="CursorController" preserve="all" />
     <type fullname="FaderViewController" preserve="all" />
     <type fullname="FittingItem" preserve="all" />
+    <type fullname="GhostSpawnableItem" preserve="all" />
     <type fullname="HighlightableItem" preserve="all" />
     <type fullname="HmiActionPopupViewController" preserve="all" />
     <type fullname="HmiInputButtonViewController" preserve="all" />
@@ -92,6 +93,7 @@
     <type fullname="ValveCap" preserve="all" />
     <type fullname="VirtualMouseInput" preserve="all" />
     <type fullname="VRConnectIcon" preserve="all" />
+    <type fullname="VREnlargedButtons" preserve="all" />
     <type fullname="VRGrabbableLid" preserve="all" />
     <type fullname="VRGrabbableValve" preserve="all" />
     <type fullname="VRHandParent" preserve="all" />
