@@ -102,7 +102,6 @@
     <type fullname="VRGrabbableLid" preserve="all" />
     <type fullname="VRGrabbableValve" preserve="all" />
     <type fullname="VRHandParent" preserve="all" />
-    <type fullname="VRHmiDropdownLine" preserve="all" />
     <type fullname="VRHoldIcon" preserve="all" />
     <type fullname="VRInteractableWithHand" preserve="all" />
     <type fullname="VRInteractableWithTool" preserve="all" />
@@ -115,8 +114,6 @@
     <type fullname="VRUIGrabbableHmiView" preserve="all" />
     <type fullname="VRUIGrabbableView" preserve="all" />
     <type fullname="VRUIHmiController" preserve="all" />
-    <type fullname="VRUIHmiDropdown" preserve="all" />
-    <type fullname="VRUIHmiSpawnZone" preserve="all" />
     <type fullname="VRUIHoveringDetection" preserve="all" />
     <type fullname="VRUIInputSources" preserve="all" />
     <type fullname="VRUIPlacementController" preserve="all" />
