@@ -108,6 +108,7 @@
     <type fullname="VRInventoryIconInput" preserve="all" />
     <type fullname="VRInventoryTool" preserve="all" />
     <type fullname="VRItemPartsVisibilityController" preserve="all" />
+    <type fullname="VRPointerInteractable" preserve="all" />
     <type fullname="VRReticle" preserve="all" />
     <type fullname="VRToolTrigger" preserve="all" />
     <type fullname="VRUICustomInputMarker" preserve="all" />
