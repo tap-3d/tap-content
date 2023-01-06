@@ -30,6 +30,7 @@
     <type fullname="BNG.PlayerTeleport" preserve="all" />
     <type fullname="BNG.RotateWithHMD" preserve="all" />
     <type fullname="BNG.ScreenFader" preserve="all" />
+    <type fullname="BNG.Slider" preserve="all" />
     <type fullname="BNG.SmoothLocomotion" preserve="all" />
     <type fullname="BNG.SnapZone" preserve="all" />
     <type fullname="BNG.SnapZoneRingHelper" preserve="all" />
@@ -42,6 +43,7 @@
     <type fullname="ConnectIcon" preserve="all" />
     <type fullname="ControlBarButtonViewController" preserve="all" />
     <type fullname="CursorController" preserve="all" />
+    <type fullname="DrawerItem" preserve="all" />
     <type fullname="FaderViewController" preserve="all" />
     <type fullname="FittingItem" preserve="all" />
     <type fullname="GhostSpawnableItem" preserve="all" />
@@ -55,6 +57,7 @@
     <type fullname="InfoPaneViewController" preserve="all" />
     <type fullname="InspectIcon" preserve="all" />
     <type fullname="InstrumentsPaneViewController" preserve="all" />
+    <type fullname="InteractableToolItem" preserve="all" />
     <type fullname="InventoryItemButtonViewController" preserve="all" />
     <type fullname="InventoryItemData" preserve="all" />
     <type fullname="InventoryItemsPanelViewController" preserve="all" />
@@ -68,14 +71,15 @@
     <type fullname="OpenOrCloseIcon" preserve="all" />
     <type fullname="Outline" preserve="all" />
     <type fullname="ParticleSystemVFX" preserve="all" />
+    <type fullname="PlacementArea" preserve="all" />
     <type fullname="PlayerInputErrorWorkaround" preserve="all" />
     <type fullname="PressIcon" preserve="all" />
     <type fullname="ProgressBarViewController" preserve="all" />
     <type fullname="ReferenceIcon" preserve="all" />
+    <type fullname="RegisteredAudioSource" preserve="all" />
     <type fullname="ResizablePanel" preserve="all" />
     <type fullname="ResultsPaneViewController" preserve="all" />
     <type fullname="SimulationData" preserve="all" />
-    <type fullname="SpawnableArea" preserve="all" />
     <type fullname="StarterAssets.FirstPersonController" preserve="all" />
     <type fullname="StarterAssets.StarterAssetsInputs" preserve="all" />
     <type fullname="StepDetailsViewController" preserve="all" />
@@ -86,6 +90,7 @@
     <type fullname="TargetIndicatorsController" preserve="all" />
     <type fullname="TaskRowViewController" preserve="all" />
     <type fullname="TimedPopupViewController" preserve="all" />
+    <type fullname="ToolsSpawnArea" preserve="all" />
     <type fullname="TurnIcon" preserve="all" />
     <type fullname="TwoStatesInteractableItem" preserve="all" />
     <type fullname="TwoStepConnectableItem" preserve="all" />
@@ -98,13 +103,18 @@
     <type fullname="VRGrabbableValve" preserve="all" />
     <type fullname="VRHandParent" preserve="all" />
     <type fullname="VRHoldIcon" preserve="all" />
+    <type fullname="VRInteractableWithHand" preserve="all" />
     <type fullname="VRInteractableWithTool" preserve="all" />
     <type fullname="VRInventoryIconInput" preserve="all" />
     <type fullname="VRInventoryTool" preserve="all" />
     <type fullname="VRItemPartsVisibilityController" preserve="all" />
+    <type fullname="VRPointerInteractable" preserve="all" />
     <type fullname="VRReticle" preserve="all" />
     <type fullname="VRToolTrigger" preserve="all" />
     <type fullname="VRUICustomInputMarker" preserve="all" />
+    <type fullname="VRUIGrabbableHmiView" preserve="all" />
+    <type fullname="VRUIGrabbableView" preserve="all" />
+    <type fullname="VRUIHmiController" preserve="all" />
     <type fullname="VRUIHoveringDetection" preserve="all" />
     <type fullname="VRUIInputSources" preserve="all" />
     <type fullname="VRUIPlacementController" preserve="all" />
@@ -120,6 +130,7 @@
     <type fullname="BNG.FloatEvent" preserve="nothing" serialized="true" />
     <type fullname="BNG.GrabberEvent" preserve="nothing" serialized="true" />
     <type fullname="BNG.HandPoseDefinition" preserve="nothing" serialized="true" />
+    <type fullname="Outline/ListVector3" preserve="nothing" serialized="true" />
     <type fullname="SimulationData/ConditionalObjectStateCheck" preserve="nothing" serialized="true" />
     <type fullname="SimulationData/ConditionalOperator" preserve="nothing" serialized="true" />
     <type fullname="SimulationData/ObjectStateTuple" preserve="nothing" serialized="true" />
@@ -130,12 +141,11 @@
     <type fullname="SimulationData/Interaction" preserve="nothing" serialized="true" />
     <type fullname="SimulationData/Interaction/InteractionType" preserve="nothing" serialized="true" />
     <type fullname="SimulationData/Task" preserve="nothing" serialized="true" />
-    <type fullname="Outline/ListVector3" preserve="nothing" serialized="true" />
-    <type fullname="SpawnableArea/Placement" preserve="nothing" serialized="true" />
+    <type fullname="PlacementArea/Placement" preserve="nothing" serialized="true" />
+    <type fullname="ToolsSpawnArea/SpawnPoint" preserve="nothing" serialized="true" />
     <type fullname="BNG.GrabbableEvent" preserve="nothing" serialized="true" />
     <type fullname="VRUIInputSources/InputSourceData" preserve="nothing" serialized="true" />
     <type fullname="VRUIInputSources/InputSourceData/InputReferenceByHandSide" preserve="nothing" serialized="true" />
-    <type fullname="VRUIPlacementController/UIView" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Cinemachine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="Cinemachine.Cinemachine3rdPersonFollow" preserve="all" />
@@ -224,6 +234,9 @@
     <type fullname="UnityEngine.XR.Interaction.Toolkit.XRInteractableEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.XR.Interaction.Toolkit.XRInteractorEvent" preserve="nothing" serialized="true" />
   </assembly>
+  <assembly fullname="UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEditor.Audio.AudioMixerSnapshotController" preserve="all" />
+  </assembly>
   <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.AnimationClip" preserve="all" />
     <type fullname="UnityEngine.Animator" preserve="all" />
@@ -231,6 +244,8 @@
     <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Audio.AudioMixer" preserve="all" />
+    <type fullname="UnityEngine.Audio.AudioMixerGroup" preserve="all" />
     <type fullname="UnityEngine.AudioClip" preserve="all" />
     <type fullname="UnityEngine.AudioListener" preserve="all" />
     <type fullname="UnityEngine.AudioSource" preserve="all" />
@@ -262,6 +277,7 @@
     <type fullname="UnityEngine.Events.PersistentListenerMode" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.UnityEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent`1[System.Single]" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.ParticleSystem" preserve="all" />
