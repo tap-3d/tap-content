@@ -3,6 +3,7 @@
     <type fullname="ActionPopupsViewController" preserve="all" />
     <type fullname="AlertsContainerViewController" preserve="all" />
     <type fullname="AlertViewController" preserve="all" />
+    <type fullname="AnimatedToolItem" preserve="all" />
     <type fullname="BackgroundUICanvasViewController" preserve="all" />
     <type fullname="BillboardUI" preserve="all" />
     <type fullname="BNG.AutoPoser" preserve="all" />
