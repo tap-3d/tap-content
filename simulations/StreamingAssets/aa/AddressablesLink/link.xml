@@ -80,6 +80,7 @@
     <type fullname="RegisteredAudioSource" preserve="all" />
     <type fullname="ResizablePanel" preserve="all" />
     <type fullname="ResultsPaneViewController" preserve="all" />
+    <type fullname="SettingsPaneViewController" preserve="all" />
     <type fullname="SimulationData" preserve="all" />
     <type fullname="StarterAssets.FirstPersonController" preserve="all" />
     <type fullname="StarterAssets.StarterAssetsInputs" preserve="all" />
