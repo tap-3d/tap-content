@@ -3,6 +3,7 @@
     <type fullname="ActionPopupsViewController" preserve="all" />
     <type fullname="AlertsContainerViewController" preserve="all" />
     <type fullname="AlertViewController" preserve="all" />
+    <type fullname="AnimatedToolItem" preserve="all" />
     <type fullname="BackgroundUICanvasViewController" preserve="all" />
     <type fullname="BillboardUI" preserve="all" />
     <type fullname="BNG.AutoPoser" preserve="all" />
@@ -79,6 +80,7 @@
     <type fullname="RegisteredAudioSource" preserve="all" />
     <type fullname="ResizablePanel" preserve="all" />
     <type fullname="ResultsPaneViewController" preserve="all" />
+    <type fullname="SettingsPaneViewController" preserve="all" />
     <type fullname="SimulationData" preserve="all" />
     <type fullname="StarterAssets.FirstPersonController" preserve="all" />
     <type fullname="StarterAssets.StarterAssetsInputs" preserve="all" />
